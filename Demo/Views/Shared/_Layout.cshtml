@@ -17,13 +17,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Lokaverkefni - Demo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Demo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Students", "Index", "Student")</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Course")</li>
+                    <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
+                    <li>@Html.ActionLink("Departments", "Index", "Department")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Lokaverkefni - Demo</p>
+            <p>&copy; @DateTime.Now.Year - Final project - Demo</p>
         </footer>
     </div>
 
