@@ -10,12 +10,5 @@ namespace Demo.Models
 {
     public class DataViewModel
     {
-        public DemoViewModel()
-        {
-            DateCreated = DateTime.Now;
-        }
-
-        
-    
-public  DateTime DateCreated { get; set; }}
+    }
 }
