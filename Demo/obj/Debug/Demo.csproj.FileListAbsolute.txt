@@ -56,6 +56,5 @@ C:\loka\Demo\Demo\bin\Microsoft.Owin.Security.OAuth.xml
 C:\loka\Demo\Demo\bin\Microsoft.Owin.Security.Google.xml
 C:\loka\Demo\Demo\bin\Microsoft.Owin.Security.Twitter.xml
 C:\loka\Demo\Demo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\loka\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
 C:\loka\Demo\Demo\obj\Debug\Demo.dll
 C:\loka\Demo\Demo\obj\Debug\Demo.pdb
