@@ -119,3 +119,4 @@ C:\temp\Thordur13\Demo\Demo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\temp\Thordur13\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
 C:\temp\Thordur13\Demo\Demo\obj\Debug\Demo.dll
 C:\temp\Thordur13\Demo\Demo\obj\Debug\Demo.pdb
+C:\loka\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
