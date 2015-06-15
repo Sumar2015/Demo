@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,10 @@ namespace Demo.Controllers
 {
     public class HomeController : Controller
     {
+        private SchoolContext db = new SchoolContext();
         public ActionResult Index()
         {
-            return View();
+            return View(db.Students.ToList());
         }
 
         public ActionResult About()
