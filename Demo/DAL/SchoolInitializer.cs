@@ -11,17 +11,6 @@ namespace Demo.DAL
     {
         protected override void Seed(SchoolContext context)
         {
-            var instructors = new List<Instructor>
-            {
-                new Instructor{FirstMidName="Daníel Brandur",LastName="Sigurgeirsson",EnrollmentDate=DateTime.Parse("2005-09-01")},
-                new Instructor{FirstMidName="Freysteinn",LastName="Alfreðsson",EnrollmentDate=DateTime.Parse("2005-09-01")},
-                new Instructor{FirstMidName="Hjalti",LastName="Magnússon",EnrollmentDate=DateTime.Parse("2005-09-01")},
-                new Instructor{FirstMidName="Hallgrímur",LastName="Arnalds",EnrollmentDate=DateTime.Parse("2005-09-01")},
-                new Instructor{FirstMidName="Halldóra",LastName="Jóhannsdóttir",EnrollmentDate=DateTime.Parse("2005-09-01")},
-            };
-            instructors.ForEach(s => context.Instructor.Add(s));
-            context.SaveChanges();
-
             var students = new List<Student>
             {
             new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01")},
@@ -33,22 +22,21 @@ namespace Demo.DAL
             new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01")},
             new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01")}
             };
+
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();
-
             var courses = new List<Course>
             {
-            new Course{CourseID=1050,Title="C++ programming",Credits=3,},
-            new Course{CourseID=4022,Title="Networks",Credits=3,},
-            new Course{CourseID=4041,Title="Data structures and functional programming",Credits=3,},
-            new Course{CourseID=1045,Title="Operating systems",Credits=4,},
-            new Course{CourseID=3141,Title="Programming languages",Credits=4,},
-            new Course{CourseID=2021,Title="Practicum in Artificial Intelligence",Credits=3,},
-            new Course{CourseID=2042,Title="Introduction to Theory of Computing",Credits=4,}
+            new Course{CourseID=1050,Title="Chemistry",Credits=3,},
+            new Course{CourseID=4022,Title="Microeconomics",Credits=3,},
+            new Course{CourseID=4041,Title="Macroeconomics",Credits=3,},
+            new Course{CourseID=1045,Title="Calculus",Credits=4,},
+            new Course{CourseID=3141,Title="Trigonometry",Credits=4,},
+            new Course{CourseID=2021,Title="Composition",Credits=3,},
+            new Course{CourseID=2042,Title="Literature",Credits=4,}
             };
             courses.ForEach(s => context.Courses.Add(s));
             context.SaveChanges();
-
             var enrollments = new List<Enrollment>
             {
             new Enrollment{StudentID=1,CourseID=1050,Grade=Grade.A},
